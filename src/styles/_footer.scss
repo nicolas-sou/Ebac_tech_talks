@@ -1,0 +1,9 @@
+@use 'variables'; 
+
+.copy {
+    &__footer{
+        background-image: linear-gradient( variables.$blue1, variables.$blue2);
+        text-align: center;
+        padding: 8px;
+    }
+}

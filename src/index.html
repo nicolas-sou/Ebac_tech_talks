@@ -9,15 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/ebac_logo.svg" alt="Ebac logo">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em: 10d 12h 20m 15s
+                Aniversário do Nicolas de 19 anos começa <br> 
+                em: <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -26,12 +27,12 @@
                         Allianz Parque - Barra Funda - São Paulo
                     </li>
                     <li class="infos-bar__infos__item" >
-                        <b>Preço</b>
-                        A partir de R$ 120,00
+                        <b>Presente</b>
+                        Sua preferência
                     </li>
                     <li class="infos-bar__infos__item" >
                         <b>Quando</b>
-                        12/12/2022 às 19hrs
+                        18/06/2023 às 14hrs
                     </li>
                 </ul>
                 <a href="#" class="button button--primary">
@@ -40,7 +41,59 @@
             </div>
         </div>
     </header>
+    <section class="event event--convidado">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Voçê foi convidado para meu aniversário</h2>
+                <p class="event__details__description">
+                    Venha celebrar esse dia especial com alegria, diversão e muitas surpresas! Haverá música, comida deliciosa e uma atmosfera incrível para todos desfrutarem.
+                </p>
+            </div>
+            <img class="event__image" src="./images/convidado.png" alt="convidados">
+        </div>
+    </section>
+    <section class="event event--comida event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Vai ter comida á vontade :)</h2>
+                <p class="event__details__description">
+                    Churrasco (carnes variadas), Massas (lasanha, espaguete, penne, etc.), Risotos (cogumelos, frutos do mar, queijo, etc.), Peixe assado ou grelhado, Frango ao molho, Pizza
+                </p>
+            </div>
+            <img class="event__image" src="./images/comidas.png" alt="comidas">
+        </div>
+    </section>
+    <section class="event event--presente">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Presentes</h2>
+                <p class="event__details__description">
+                    Tamanho da roupa G , Tamanho do pé 42/43 , Seu presente de prefêrencia, Sua presença já é o presente.
+                </p>
+            </div>
+            <img class="event__image" src="./images/presentes.png" alt="presentes">
+        </div>
+    </section>
+    <section class="event event--local event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Localição</h2>
+                <p class="event__details__description">
+                    Allianz Parque - Barra Funda - São Paulo
+                </p>
+            </div>
+            <img class="event__image" src="./images/localizacão.png" alt="localizacão">
+        </div>
+    </section>
+    <footer>
+        <div class="copy">
+            <div class="copy__footer">
+                &copy; 2023-by Nicolas Sousa
+            </div>
+        </div>
+    </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
